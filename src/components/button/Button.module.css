@@ -1,0 +1,236 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btn:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn:disabled,
+.btnDisabled {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+/* Block */
+.btnBlock {
+  display: flex;
+  width: 100%;
+}
+
+/* Sizes */
+.btnSm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.btnLg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+/* ── Solid variants ────────────────────────────────────── */
+
+.btnPrimary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.btnPrimary:hover { background-color: #0b5ed7; border-color: #0a58ca; color: #fff; }
+.btnPrimary:focus-visible { box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5); }
+.btnPrimary.btnActive,
+.btnPrimary:active { background-color: #0a58ca; border-color: #0a53be; }
+
+.btnSecondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.btnSecondary:hover { background-color: #5c636a; border-color: #565e64; color: #fff; }
+.btnSecondary:focus-visible { box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5); }
+.btnSecondary.btnActive,
+.btnSecondary:active { background-color: #565e64; border-color: #51585e; }
+
+.btnSuccess {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+.btnSuccess:hover { background-color: #157347; border-color: #146c43; color: #fff; }
+.btnSuccess:focus-visible { box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5); }
+.btnSuccess.btnActive,
+.btnSuccess:active { background-color: #146c43; border-color: #13653f; }
+
+.btnDanger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btnDanger:hover { background-color: #bb2d3b; border-color: #b02a37; color: #fff; }
+.btnDanger:focus-visible { box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5); }
+.btnDanger.btnActive,
+.btnDanger:active { background-color: #b02a37; border-color: #a52834; }
+
+.btnWarning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.btnWarning:hover { background-color: #ffca2c; border-color: #ffc720; color: #000; }
+.btnWarning:focus-visible { box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5); }
+.btnWarning.btnActive,
+.btnWarning:active { background-color: #ffcd39; border-color: #ffc720; }
+
+.btnInfo {
+  color: #000;
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+.btnInfo:hover { background-color: #31d2f2; border-color: #25cff2; color: #000; }
+.btnInfo:focus-visible { box-shadow: 0 0 0 0.25rem rgba(11, 172, 204, 0.5); }
+.btnInfo.btnActive,
+.btnInfo:active { background-color: #3dd5f3; border-color: #25cff2; }
+
+.btnLight {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btnLight:hover { background-color: #f9fafb; border-color: #f9fafb; color: #000; }
+.btnLight:focus-visible { box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5); }
+.btnLight.btnActive,
+.btnLight:active { background-color: #f9fafb; border-color: #f9fafb; }
+
+.btnDark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+.btnDark:hover { background-color: #1c1f23; border-color: #1a1e21; color: #fff; }
+.btnDark:focus-visible { box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5); }
+.btnDark.btnActive,
+.btnDark:active { background-color: #1a1e21; border-color: #191c1f; }
+
+.btnLink {
+  color: #0d6efd;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btnLink:hover { color: #0a58ca; }
+.btnLink:focus-visible { box-shadow: none; outline: 0.25rem solid rgba(13, 110, 253, 0.25); }
+
+/* ── Outline variants ──────────────────────────────────── */
+
+.btnOutlinePrimary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+.btnOutlinePrimary:hover { color: #fff; background-color: #0d6efd; border-color: #0d6efd; }
+.btnOutlinePrimary:focus-visible { box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5); }
+.btnOutlinePrimary.btnActive,
+.btnOutlinePrimary:active { color: #fff; background-color: #0d6efd; border-color: #0d6efd; }
+
+.btnOutlineSecondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+.btnOutlineSecondary:hover { color: #fff; background-color: #6c757d; border-color: #6c757d; }
+.btnOutlineSecondary:focus-visible { box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5); }
+.btnOutlineSecondary.btnActive,
+.btnOutlineSecondary:active { color: #fff; background-color: #6c757d; border-color: #6c757d; }
+
+.btnOutlineSuccess {
+  color: #198754;
+  border-color: #198754;
+}
+.btnOutlineSuccess:hover { color: #fff; background-color: #198754; border-color: #198754; }
+.btnOutlineSuccess:focus-visible { box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5); }
+.btnOutlineSuccess.btnActive,
+.btnOutlineSuccess:active { color: #fff; background-color: #198754; border-color: #198754; }
+
+.btnOutlineDanger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.btnOutlineDanger:hover { color: #fff; background-color: #dc3545; border-color: #dc3545; }
+.btnOutlineDanger:focus-visible { box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5); }
+.btnOutlineDanger.btnActive,
+.btnOutlineDanger:active { color: #fff; background-color: #dc3545; border-color: #dc3545; }
+
+.btnOutlineWarning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+.btnOutlineWarning:hover { color: #000; background-color: #ffc107; border-color: #ffc107; }
+.btnOutlineWarning:focus-visible { box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); }
+.btnOutlineWarning.btnActive,
+.btnOutlineWarning:active { color: #000; background-color: #ffc107; border-color: #ffc107; }
+
+.btnOutlineInfo {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+.btnOutlineInfo:hover { color: #000; background-color: #0dcaf0; border-color: #0dcaf0; }
+.btnOutlineInfo:focus-visible { box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5); }
+.btnOutlineInfo.btnActive,
+.btnOutlineInfo:active { color: #000; background-color: #0dcaf0; border-color: #0dcaf0; }
+
+.btnOutlineLight {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btnOutlineLight:hover { color: #000; background-color: #f8f9fa; border-color: #f8f9fa; }
+.btnOutlineLight:focus-visible { box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5); }
+.btnOutlineLight.btnActive,
+.btnOutlineLight:active { color: #000; background-color: #f8f9fa; border-color: #f8f9fa; }
+
+.btnOutlineDark {
+  color: #212529;
+  border-color: #212529;
+}
+.btnOutlineDark:hover { color: #fff; background-color: #212529; border-color: #212529; }
+.btnOutlineDark:focus-visible { box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5); }
+.btnOutlineDark.btnActive,
+.btnOutlineDark:active { color: #fff; background-color: #212529; border-color: #212529; }
+
+/* ── Loading spinner ───────────────────────────────────── */
+
+.spinner {
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
