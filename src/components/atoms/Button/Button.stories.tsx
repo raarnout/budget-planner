@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { fn } from "storybook/test";
 import { Button } from "./Button";
 
@@ -117,7 +117,6 @@ export const OutlineDanger: Story = {
 };
 
 export const AllVariants: Story = {
-  name: "All Variants",
   render: () => (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", maxWidth: 600 }}>
       {(
@@ -142,7 +141,6 @@ export const AllVariants: Story = {
 };
 
 export const AllOutlineVariants: Story = {
-  name: "All Outline Variants",
   render: () => (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", maxWidth: 600 }}>
       {(
@@ -165,7 +163,6 @@ export const AllOutlineVariants: Story = {
 };
 
 export const AllSizes: Story = {
-  name: "All Sizes",
   render: () => (
     <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
       <Button variant="primary" size="sm">Small</Button>
